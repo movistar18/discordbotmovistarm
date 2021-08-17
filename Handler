@@ -1,4 +1,4 @@
-/////////Esto lo pondremos debajo de las definiciones, y encima del evento mensaje///////////
+/////////Esto lo pondremos debajo de las definiciones, y encima del evento mensaje; si tienes presencia, entonces tienes que ponerlo encima de ella///////////
 
 const fs = require('fs')
 let { readdirSync } = require('fs') 
