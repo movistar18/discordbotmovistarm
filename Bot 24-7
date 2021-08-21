@@ -1,0 +1,21 @@
+//////Primero se tiene que definir esto en el index///////////
+
+const keepAlive = require('./server.js');
+const express = require("express")().get("/", (req,res)=>res.send("Bot en Linea!")).listen(3000)
+
+/////////Luego crearan un archivo llamado server.js y pegarán esto como en el video////////////
+
+const express = require('express')
+const server = express();
+ 
+server.all('/', (req, res) => {
+    res.send('xd');
+});
+ 
+function keepAlive() {
+   server.listen(3000, () => { console.log("Si" + Date.now()) });
+}
+
+module.exports = keepAlive;
+
+////Los demas pasos estan en mi video, asi que pueden pasarse a verlo para saber que mas se tiene que hacer para tener el bot activo siempre///////
